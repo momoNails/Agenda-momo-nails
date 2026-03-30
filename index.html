@@ -867,7 +867,7 @@ Gracias 💖
 
       updateCreatingState(true);
 
-     const duration = getServiceDuration(main.label);
+     const duration = main ? getServiceDuration(main.label) : 1;
 
      const result = await window.dataSdk.create({
   selected_date: dateValue,
@@ -875,7 +875,7 @@ Gracias 💖
   time_slot: state.selected_slot,
   client_name: name,
   phone: phone,
-  main_service: main.label,
+  main_service: main ? main.label : "solo extras",
   duration: duration,
   extras_summary: extras.length ? extras.map(item => item.label).join(", ") : "",
   comments: comments,
@@ -900,7 +900,7 @@ const newAppointment = {
   time_slot: state.selected_slot,
   client_name: name,
   phone: phone,
-  main_service: main.label,
+  main_service: main ? main.label : "solo extras",
   duration: duration,
   extras_summary: extras.length ? extras.map(item => item.label).join(", ") : "",
   comments: comments,
