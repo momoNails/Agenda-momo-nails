@@ -403,7 +403,7 @@
     }
 
     function formatMoney(value) {
-      return "$" + Number(value || 0).toLocalString("es-Mx");
+      return "$" + Number(value || 0).toLocaleString("es-Mx");
     }
 
     function getConfig() {
@@ -488,6 +488,18 @@
         : "Sin extras";
       els.invoiceComments.textContent = "Comentarios: " + (els.comments.value.trim() || "—");
       els.invoiceTotal.textContent = formatMoney(getTotal());
+    }
+    
+    function updateWhatsAppLink() {
+    // 
+    }   
+
+    function generateWhatsAppMessage() {
+    const phone = els.phone.value.trim();
+    if (!phone) return null;
+
+    const message = encodeURIComponent("Hola, confirmo mi cita 💅✨");
+    return { phone, message };
     }
 
     function getAppointmentsForDate(dateValue) {
