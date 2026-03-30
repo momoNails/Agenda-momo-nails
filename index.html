@@ -416,7 +416,6 @@
       heroTextText: document.getElementById("hero_text_text"),
       formTitleText: document.getElementById("form_title_text"),
       commentsLabelText: document.getElementById("comments_label_text"),
-      whatsappButton: document.getElementById("whatsapp_button"),
       selectedDate: document.getElementById("selected_date"),
       selectedDayDisplay: document.getElementById("selected_day_display"),
       slotGrid: document.getElementById("slot_grid"),
@@ -587,9 +586,7 @@
   els.printButton.onclick = () => {
     window.open(url, "_blank");
   };
-}
-    
-    }   
+}  
 
     function generateWhatsAppMessage() {
   const phone = els.phone.value.trim();
@@ -863,8 +860,8 @@ Gracias 💖
         return;
       }
 
-      if (!main) {
-        showMessage("Selecciona un servicio principal.", "error");
+      if (!main && extras. length === 0) {
+        showMessage("Selecciona al menos un servicio.", "error");
         return;
       }
 
@@ -944,26 +941,14 @@ updateTotalUI();
         updateInvoice();
       });
 
-      // Main service: deselect extras when selecting a main service
-      document.querySelectorAll('input[name="main_service"]').forEach(input => {
+        document.querySelectorAll('input[name="main_service"]').forEach(input => {
         input.addEventListener("change", function () {
-          if (this.checked) {
-            document.querySelectorAll('.extra-service').forEach(extra => {
-              extra.checked = false;
-            });
-          }
-          updateTotalUI();
+        updateTotalUI();
         });
       });
 
-      // Extra services: deselect main service when selecting extras
-      document.querySelectorAll('.extra-service').forEach(input => {
+        document.querySelectorAll('.extra-service').forEach(input => {
         input.addEventListener("change", function () {
-          if (this.checked) {
-            document.querySelectorAll('input[name="main_service"]').forEach(main => {
-              main.checked = false;
-            });
-          }
           updateTotalUI();
         });
       });
