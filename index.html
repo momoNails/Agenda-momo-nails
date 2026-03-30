@@ -195,25 +195,93 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm"><label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Retiro completo|100"><span>Retiro completo · $100</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Retiro parcial|80"><span>Retiro parcial · $80</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Reparación de uña|20"><span>Reparación de uña · $20</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Retoque básico polygel|200"><span>Retoque básico polygel · $200</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Retoque básico softgel|150"><span>Retoque básico softgel · $150</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Retoque básico uñas naturales|100"><span>Retoque básico uñas naturales · $100</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Retoque avanzado polygel|300"><span>Retoque avanzado polygel · $300</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Retoque avanzado softgel|350"><span>Retoque avanzado softgel · $350</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Retoque avanzado naturales|200"><span>Retoque avanzado naturales · $200</span></label>
           </div>
          </fieldset>
-         <fieldset class="rounded-[1.5rem] p-4 border-2 bg-white" style="border-color: var(--primary_action_color);"><legend class="px-2 font-extrabold">Otros y accesorios</legend>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-           </div><label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Ojo de gato x mabas manos|40"><span>Ojo de gato x ambas manos · $40</span></label> <label class="flex gap-3 items-start"><input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Efecto espejo x ambas manos|40"><span>Efecto espejo x ambas manos · $40</span></label>
-           </div>
-           <div class="flex gap-2 items-center"><label class="flex gap-3 items-start flex-1"><span>Dijes, moños, diseño 3D · $15</span></label> <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold" style="border-color: var(--primary_action_color);" type="number" min="0" value="0" data-service="Dijes, moños, diseño 3D|15">
-           </div>
-           <div class="flex gap-2 items-center"><label class="flex gap-3 items-start flex-1"><span>Corona perlas, balines, piedras o combinado · $15</span></label> <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold" style="border-color: var(--primary_action_color);" type="number" min="0" value="0" data-service="Corona perlas, balines, piedras o combinado|15">
-           </div>
-           <div class="flex gap-2 items-center"><label class="flex gap-3 items-start flex-1"><span>Cristales · $3</span></label> <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold" style="border-color: var(--primary_action_color);" type="number" min="0" value="0" data-service="Cristales|3">
-           </div>
-           <div class="flex gap-2 items-center"><label class="flex gap-3 items-start flex-1"><span>Balines · $3</span></label> <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold" style="border-color: var(--primary_action_color);" type="number" min="0" value="0" data-service="Balines|3">
-           </div>
-           <div class="flex gap-2 items-center"><label class="flex gap-3 items-start flex-1"><span>Perlas · $3</span></label> <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold" style="border-color: var(--primary_action_color);" type="number" min="0" value="0" data-service="Perlas|3">
-           <div class="flex gap-2 items-center"><label class="flex gap-3 items-start flex-1"><span>Sticker, mano alzada x dedo · $20</span></label> <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold" style="border-color: var(--primary_action_color);" type="number" min="0" value="0" data-service="Sticker, mano alzada x dedo|20">
-           </div>
-           <div class="flex gap-2 items-finish"><label class="flex gap-3 items-start flex-1"><span>Encapsulado en 2 dedos · $30</span></label> <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold" style="border-color: var(--primary_action_color);" type="number" min="0" value="0" data-service="Encapsulado en 2 dedos|30">
-           </div>
-         </fieldset>
-        </div>
+         <fieldset class="rounded-[1.5rem] p-4 border-2 bg-white" style="border-color: var(--primary_action_color);">
+  <legend class="px-2 font-extrabold">Otros y accesorios</legend>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+
+    <label class="flex gap-3 items-start">
+      <input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Ojo de gato x ambas manos|40">
+      <span>Ojo de gato x ambas manos · $40</span>
+    </label>
+
+    <label class="flex gap-3 items-start">
+      <input class="custom-checkbox mt-1 extra-service" type="checkbox" value="Efecto espejo x ambas manos|40">
+      <span>Efecto espejo x ambas manos · $40</span>
+    </label>
+
+    <div class="flex gap-2 items-center">
+      <label class="flex gap-3 items-start flex-1">
+        <span>Dijes, moños, diseño 3D · $15</span>
+      </label>
+      <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold"
+        style="border-color: var(--primary_action_color);"
+        type="number" min="0" value="0"
+        data-service="Dijes, moños, diseño 3D|15">
+    </div>
+
+    <div class="flex gap-2 items-center">
+      <label class="flex gap-3 items-start flex-1">
+        <span>Corona perlas, balines, piedras o combinado · $15</span>
+      </label>
+      <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold"
+        style="border-color: var(--primary_action_color);"
+        type="number" min="0" value="0"
+        data-service="Corona perlas, balines, piedras o combinado|15">
+    </div>
+
+    <div class="flex gap-2 items-center">
+      <label class="flex gap-3 items-start flex-1">
+        <span>Cristales · $3</span>
+      </label>
+      <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold"
+        style="border-color: var(--primary_action_color);"
+        type="number" min="0" value="0"
+        data-service="Cristales|3">
+    </div>
+
+    <div class="flex gap-2 items-center">
+      <label class="flex gap-3 items-start flex-1">
+        <span>Balines · $3</span>
+      </label>
+      <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold"
+        style="border-color: var(--primary_action_color);"
+        type="number" min="0" value="0"
+        data-service="Balines|3">
+    </div>
+
+    <div class="flex gap-2 items-center">
+      <label class="flex gap-3 items-start flex-1">
+        <span>Perlas · $3</span>
+      </label>
+      <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold"
+        style="border-color: var(--primary_action_color);"
+        type="number" min="0" value="0"
+        data-service="Perlas|3">
+    </div>
+
+    <div class="flex gap-2 items-center">
+      <label class="flex gap-3 items-start flex-1">
+        <span>Sticker, mano alzada x dedo · $20</span>
+      </label>
+      <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold"
+        style="border-color: var(--primary_action_color);"
+        type="number" min="0" value="0"
+        data-service="Sticker, mano alzada x dedo|20">
+    </div>
+
+    <div class="flex gap-2 items-center">
+      <label class="flex gap-3 items-start flex-1">
+        <span>Encapsulado en 2 dedos · $30</span>
+      </label>
+      <input class="accessory-qty w-12 rounded-lg px-2 py-1 border text-center text-sm font-semibold"
+        style="border-color: var(--primary_action_color);"
+        type="number" min="0" value="0"
+        data-service="Encapsulado en 2 dedos|30">
+    </div>
+
+  </div>
+</fieldset>
         <div><label id="comments_label_text" for="comments" class="block font-bold mb-2">Comentarios</label> <textarea id="comments" rows="4" maxlength="300" class="w-full rounded-[1.5rem] px-4 py-3 border-2 outline-none bg-white resize-none" style="border-color: var(--primary_action_color);" placeholder="Alergias, colores favoritos, idea del diseño..."></textarea>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 items-stretch">
